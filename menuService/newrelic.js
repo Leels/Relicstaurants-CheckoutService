@@ -9,11 +9,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Foodme->menuService'],
+  app_name: ['Relicstaurants - checkoutService'],
   /**
    * Your New Relic license key.
    */
-  license_key: 'NR_LICENSE_KEY',
+  license_key: '8b8b554639b87a14a4cb27a16d2a0256FFFFNRAL',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
@@ -57,5 +57,8 @@ exports.config = {
       'response.headers.setCookie*',
       'response.headers.x*'
     ]
-  }
+  },
+  browser_monitoring : {
+    enable : true
+}
 }
