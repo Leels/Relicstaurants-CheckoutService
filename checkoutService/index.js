@@ -42,10 +42,14 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE) {
       storage.add(new RestaurantRecord(restaurant));
     });
 
-    app.listen(PORT, function() {
-      console.log('Go to http://localhost:' + PORT + '/');
-    });
-  });
+    app.listen(PORT, '0.0.0.0', function() {
+  console.log('Go to http://<EC2-IP>:' + PORT + '/');
+});
+});
+  //   app.listen(PORT, function() {
+  //     console.log('Go to http://localhost:' + PORT + '/');
+  //   });
+  // });
 
 
   // Windows and Node.js before 0.8.9 would crash
