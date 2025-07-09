@@ -60,7 +60,7 @@ const Payments = () => {
           name="card"
           rules={[
             {
-              required: true,
+              required: false,
               message: 'Please choose one!',
             },
           ]}
