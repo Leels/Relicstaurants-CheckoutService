@@ -16,7 +16,7 @@ const Payments = () => {
   const { Option } = Select;
 
   const handleOrderSending = async (payload) => {
-    await axios.post('http://lvh.me:3002/api/checkout', payload);
+    await axios.post('http://3.133.81.34.me:3002/api/checkout', payload);
   };
 
   const columns = [
